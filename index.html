@@ -67,11 +67,11 @@
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="font-sans text-text bg-white">
+<body class="font-sans text-text bg-slate-900">
     <!-- Navigation -->
-    <nav class="fixed w-full bg-white/95 shadow-md z-50 py-4">
+    <nav class="fixed w-full bg-slate-950/80 backdrop-blur-md text-white shadow-md z-50 py-4">
         <div class="container mx-auto px-5 flex justify-between items-center">
-            <div class="text-2xl font-bold text-primary text-blue-700">Welcome!</div>
+            <div class="text-2xl font-bold text-primary">Welcome!</div>
             <ul class="hidden md:flex gap-8">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -94,7 +94,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+    <section id="home" class="min-h-screen flex items-center py-20 bg-gradient-to-br bg-primary">
         <div class="container mx-auto px-5">
             <div class="flex flex-col items-center text-center">
                 <!-- Profile Image (Top on mobile) -->
@@ -103,9 +103,9 @@
                 </div>
                 
                 <!-- Content -->
-                <div class="max-w-2xl">
-                    <h1 class="text-4xl md:text-6xl font-bold mb-4 text-blue-700">
-                        Hi, I'm <span class="text-primary">Aditya Hibatillah Khairan</span>
+                <div class="max-w-2xl text-white">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 text-blue-500">
+                       <span class="text-white">Hi, I'm</span> <span class="text-primary">Aditya Hibatillah Khairan</span>
                     </h1>
                     <h2 class="text-xl md:text-3xl font-normal text-lightText mb-4">
                         Entry Level Web Developer
@@ -114,11 +114,11 @@
                         I create beautiful, responsive websites and web applications
                     </p>
                     <div class="flex flex-col sm:flex-row justify-center gap-4">
-                        <a href="#contact" class="inline-block bg-blue-700 hover:bg-blue-400 text-white px-6 py-3 rounded-full transition-all duration-300 font-medium text-center">
+                        <a href="#contact" class="inline-block bg-blue-700 hover:bg-blue-400 text-blue-300 px-6 py-3 rounded-full transition-all duration-300 font-medium text-center">
                             Get In Touch
                         </a>
                         <a href="cv/CV_Aditya_Hibatillah_Khairan.pdf" download="Aditya_Hibatillah_Khairan_CV.pdf" 
-                           class="inline-block bg-blue-700 hover:bg-blue-400 text-white px-6 py-3 rounded-full transition-all duration-300 font-medium text-center">
+                           class="inline-block bg-blue-700 hover:bg-blue-400 text-blue-300 px-6 py-3 rounded-full transition-all duration-300 font-medium text-center">
                             Download CV
                         </a>
                     </div>
@@ -131,9 +131,9 @@
     <!-- About Section -->
     <section id="about" class="py-24 bg-lightBg">
         <div class="container mx-auto px-5">
-            <h2 class="section-title text-center font-bold">About Me</h2>
+            <h2 class="section-title text-center font-bold text-white">About Me</h2>
             <div class="max-w-4xl mx-auto">
-                <div class="bg-white p-8 rounded-xl shadow-lg">
+                <div class="bg-primary p-8 rounded-xl shadow-lg">
                     <h3 class="text-2xl font-bold mb-4">Enthusiastic Web Developer</h3>
                     <p class="mb-6 text-lightText">I’m a self-taught beginner web developer with a growing passion for building websites. I’m still learning, but I enjoy creating simple, clean, and functional user experiences. Step by step, I’m improving my skills and exploring new technologies to become a better developer every day. Currently learning for Frontend Development.</p>
                     <div class="mt-6">
@@ -246,9 +246,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-6">
+    <footer class="bg-slate-950/80 text-white py-6">
         <div class="container mx-auto px-5 text-center">
-            <p>&copy; <span id="year"></span>All rights reserved.</p>
+            <p>&copy; <span id="year"></span> All rights reserved.</p>
         </div>
     </footer>
 
