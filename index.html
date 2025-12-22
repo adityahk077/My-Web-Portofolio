@@ -107,7 +107,7 @@
       </div>
       <!-- Mobile Menu -->
       <div
-        class="md:hidden fixed top-20 left-0 w-full bg-slate-900 backdrop-blur-md shadow-lg -translate-x-full transition-transform duration-300 nav-links-mobile"
+        class="md:hidden fixed top-0 left-0 w-full bg-slate-900/95 backdrop-blur-md shadow-lg -translate-y-full transition-transform duration-300 nav-links-mobile pt-20"
       >
         <ul class="flex flex-col items-center py-4 gap-4">
           <li><a href="#home" class="nav-link text-lg">Home</a></li>
@@ -431,8 +431,8 @@
       const navLinks = document.querySelector(".nav-links-mobile");
 
       hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("translate-x-0");
-        navLinks.classList.toggle("-translate-x-full");
+        navLinks.classList.toggle("translate-y-0");
+        navLinks.classList.toggle("-translate-y-full");
         hamburger.classList.toggle("text-primary");
 
         // Toggle aria-expanded for accessibility
@@ -444,8 +444,8 @@
       // Close mobile menu when clicking a link
       document.querySelectorAll(".nav-links-mobile a").forEach((link) => {
         link.addEventListener("click", () => {
-          navLinks.classList.remove("translate-x-0");
-          navLinks.classList.add("-translate-x-full");
+          navLinks.classList.remove("translate-y-0");
+          navLinks.classList.add("-translate-y-full");
           hamburger.classList.remove("text-primary");
           hamburger.setAttribute("aria-expanded", "false");
         });
