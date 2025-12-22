@@ -80,7 +80,7 @@
         border-radius: 0.125rem;
       }
     </style>
-        <link
+    <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
@@ -179,11 +179,12 @@
           <div class="bg-slate-950 p-8 rounded-xl shadow-lg">
             <h3 class="text-2xl font-bold mb-4">Enthusiastic Web Developer</h3>
             <p class="mb-6 text-lightText">
-              I'm a self-taught beginner web developer with a growing passion for
-              building websites. I'm still learning, but I enjoy creating simple,
-              clean, and functional user experiences. Step by step, I'm improving
-              my skills and exploring new technologies to become a better
-              developer every day. Currently learning for Frontend Development.
+              I'm a self-taught beginner web developer with a growing passion
+              for building websites. I'm still learning, but I enjoy creating
+              simple, clean, and functional user experiences. Step by step, I'm
+              improving my skills and exploring new technologies to become a
+              better developer every day. Currently learning for Frontend
+              Development.
             </p>
             <div class="mt-8">
               <h4 class="text-xl font-semibold mb-4">My Skills</h4>
@@ -236,7 +237,9 @@
       <div class="container mx-auto px-5 text-white">
         <h2 class="section-title text-center font-bold text-xl">My Works</h2>
         <div class="flex justify-center">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 py-5 max-w-4xl mx-auto">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-10 py-5 max-w-4xl mx-auto"
+          >
             <!-- Project 1 -->
             <div
               class="bg-slate-950 rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2"
@@ -253,13 +256,13 @@
                   IT Support In LEN Industry
                 </h3>
                 <p class="text-lightText mb-4">
-                  I performed routine maintenance and troubleshooting on computer
-                  systems and networks to ensure they operated efficiently with
-                  minimal downtime. My work included basic hardware
-                  troubleshooting, identifying common issues, and resolving them
-                  effectively. I also conducted regular device maintenance and
-                  inspections to keep all equipment running smoothly and
-                  reliably.
+                  I performed routine maintenance and troubleshooting on
+                  computer systems and networks to ensure they operated
+                  efficiently with minimal downtime. My work included basic
+                  hardware troubleshooting, identifying common issues, and
+                  resolving them effectively. I also conducted regular device
+                  maintenance and inspections to keep all equipment running
+                  smoothly and reliably.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-3">
                   <a
@@ -285,8 +288,8 @@
               <div class="p-6">
                 <h3 class="text-xl font-bold mb-3">IT Freelance</h3>
                 <p class="text-lightText mb-4">
-                  I'm a freelance IT service technician who helps individuals and
-                  small businesses keep their devices running smoothly. I
+                  I'm a freelance IT service technician who helps individuals
+                  and small businesses keep their devices running smoothly. I
                   specialize in Windows reinstallation, system optimization, and
                   troubleshooting for computers and laptops. I also provide
                   device maintenance, hardware checks, software setup, and
@@ -319,16 +322,16 @@
             <p class="text-lightText mb-8">
               Feel free to reach out for collaborations or just a friendly hello
             </p>
-            <div class="space-y-4">
-              <p class="flex items-center text-lg">
+            <div class="mt-8">
+              <p class="flex items-center text-lg mb-3">
                 <i class="fas fa-envelope text-white mr-3 text-xl w-6"></i>
                 adityahibatillah@gmail.com
               </p>
-              <p class="flex items-center text-lg">
+              <p class="flex items-center text-lg mb-6">
                 <i class="fas fa-phone text-green-500 mr-3 text-xl w-6"></i>
                 +62 819 3120 9361
               </p>
-              <div class="flex gap-4 mt-6">
+              <div class="flex gap-4">
                 <a
                   href="https://github.com/adityahk077"
                   target="_blank"
@@ -357,38 +360,58 @@
               </div>
             </div>
           </div>
-          <div class="bg-slate-950 text-white rounded-xl px-8 py-8">
-            <form class="space-y-6">
+          <form id="contact-form" class="space-y-4" action="https://formspree.io/f/mzdpakla" method="POST">
               <div>
+                <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Name</label>
                 <input
                   type="text"
-                  placeholder="Your Name"
+                  id="name"
+                  name="name"
                   required
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                  class="w-full px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
+                  placeholder="Your name"
                 />
               </div>
               <div>
+                <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
                 <input
                   type="email"
-                  placeholder="Your Email"
+                  id="email"
+                  name="email"
                   required
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                  class="w-full px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
+                  placeholder="your.email@example.com"
                 />
               </div>
               <div>
-                <textarea
-                  placeholder="Your Message"
-                  rows="5"
+                <label for="subject" class="block text-sm font-medium text-gray-300 mb-1">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
                   required
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                  class="w-full px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
+                  placeholder="How can I help you?"
+                />
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  class="w-full px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
+                  placeholder="Your message here..."
                 ></textarea>
               </div>
               <button
                 type="submit"
-                class="w-full bg-blue-700 hover:bg-blue-300 text-white px-5 py-2.5 rounded-lg transition-all duration-300 font-medium text-center"
+                class="w-full bg-blue-700 hover:bg-blue-600 text-white font-medium py-2 px-6 rounded-lg transition duration-300"
               >
                 Send Message
               </button>
+              <p id="form-status" class="text-center text-sm mt-2"></p>
             </form>
           </div>
         </div>
@@ -472,6 +495,62 @@
       // Initial check
       onScroll();
 
+      // Contact form submission
+      const form = document.getElementById('contact-form');
+      const formStatus = document.getElementById('form-status');
+
+      if (form) {
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          
+          const submitButton = form.querySelector('button[type="submit"]');
+          const originalButtonText = submitButton.textContent;
+          
+          try {
+            // Disable the submit button
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+            submitButton.classList.add('opacity-75');
+            
+            // Get form data
+            const formData = new FormData(form);
+            
+            // Send form data to Formspree
+            const response = await fetch(form.action, {
+              method: 'POST',
+              body: formData,
+              headers: {
+                'Accept': 'application/json'
+              }
+            });
+            
+            if (response.ok) {
+              // Show success message
+              formStatus.textContent = 'Message sent successfully! I\'ll get back to you soon.';
+              formStatus.className = 'text-center text-sm mt-2 text-green-400';
+              form.reset();
+            } else {
+              const data = await response.json();
+              throw new Error(data.error || 'Failed to send message');
+            }
+          } catch (error) {
+            console.error('Error:', error);
+            formStatus.textContent = 'Oops! There was a problem sending your message. Please try again later or contact me directly via email.';
+            formStatus.className = 'text-center text-sm mt-2 text-red-400';
+          } finally {
+            // Re-enable the submit button
+            submitButton.disabled = false;
+            submitButton.textContent = originalButtonText;
+            submitButton.classList.remove('opacity-75');
+            
+            // Hide status message after 5 seconds
+            setTimeout(() => {
+              formStatus.textContent = '';
+            }, 10000);
+          }
+        });
+      }
+
       // Smooth scrolling for anchor links
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
@@ -522,5 +601,5 @@
         });
       }
     </script>
-</body>
+  </body>
 </html>
